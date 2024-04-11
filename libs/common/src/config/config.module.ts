@@ -8,10 +8,10 @@ import * as Joi from 'joi';  // Toda la configuracion de Joi
     imports: [NestConfigModule.forRoot({
         validationSchema : Joi.object({     // Validar variable de entorno
             MONGODB_URI: Joi.string().required(),   // Variable de entorno de tipo String
-            
+
         })
     })],
-    providers: [ConfigService],
-    exports: [ConfigService],   
+    providers: [ConfigService],  //usa config
+    exports: [ConfigService],    //deja usar config
 })
 export class ConfigModule {}
