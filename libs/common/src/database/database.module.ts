@@ -16,6 +16,6 @@ import { ConfigModule } from '../config/config.module';
 })
 export class DatabaseModule {
     static forFeature(model: ModelDefinition[]){
-        return MongooseModule.forFeature(model)
+        return MongooseModule.forFeature(model);
     }
 }
