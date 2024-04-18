@@ -19,7 +19,8 @@ export class ReservationsService {
   }
 
   findAll() {
-    this.reservationRespository.find({});
+    //return "DEVUELVE TODOS";
+    return this.reservationRespository.find({});
   }
 
   findOne(_id: string) {
